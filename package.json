@@ -2,7 +2,7 @@
   "name": "gatsby-starter-portfolio-minimal",
   "description": "A clean, one-page portfolio using MDX",
   "version": "1.0.0",
-  "author": "Konstantin Münster <mail@konstantin.digital>",
+  "author": "Mihai Vatavu",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -56,7 +56,7 @@
     "gatsby-plugin-eslint": "^2.0.8",
     "husky": "^4.3.5",
     "lint-staged": "^10.5.3",
-    "netlify-plugin-cypress": "^1.4.1",
+    "netlify-plugin-cypress": "^1.9.2",
     "prettier": "^1.19.1",
     "start-server-and-test": "^1.12.0"
   },
