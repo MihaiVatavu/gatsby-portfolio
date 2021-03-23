@@ -114,7 +114,7 @@ const StyledProject = styled(motion.div)`
   margin-bottom: 2rem;
   flex-shrink: 0;
   padding-right: 2.5rem;
-  max-width: 20rem;
+  max-width: 30rem;
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     max-width: 25rem;
     margin-top: 2rem;
@@ -184,8 +184,8 @@ const StyledProject = styled(motion.div)`
   }
   .screenshot {
     width: 100%;
-    max-width: 25rem;
-    height: 15rem;
+    max-width: 33rem;
+    height: 20rem;
     border-radius: ${({ theme }) => theme.borderRadius};
     box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
     transition: all 0.3s ease-out;
