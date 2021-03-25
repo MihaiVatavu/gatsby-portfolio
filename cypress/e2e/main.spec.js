@@ -9,8 +9,6 @@ describe("IndexPage", () => {
 
   it("renders all sections", () => {
     cy.get("#hero").should("exist")
-    cy.get("#articles").should("exist")
-    cy.get("#about").should("exist")
     cy.get("#interests").should("exist")
     cy.get("#projects").should("exist")
     cy.get("#contact").should("exist")
@@ -23,11 +21,9 @@ describe("IndexPage", () => {
 
   it("references legal pages", () => {
     cy.findByTestId("footer-links")
-      .findByText(/imprint/i)
       .should("have.attr", "href")
       .and("include", "imprint")
     cy.findByTestId("footer-links")
-      .findByText(/privacy/i)
       .should("have.attr", "href")
       .and("include", "privacy")
   })
@@ -36,14 +32,10 @@ describe("IndexPage", () => {
     cy.get("#layout-wrapper").then(elem => {
       if (elem.attr("data-useCookieBar") === "true") {
         cy.get("button#confirm").click()
-        cy.findByTestId("footer-links")
-          .findByText(/imprint/i)
-          .click()
+        cy.findByTestId("footer-links").click()
         cy.findByTestId("heading").should("exist")
       } else {
-        cy.findByTestId("footer-links")
-          .findByText(/imprint/i)
-          .click()
+        cy.findByTestId("footer-links").click()
         cy.findByTestId("heading").should("exist")
       }
     })
