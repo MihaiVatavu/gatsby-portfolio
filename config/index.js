@@ -1,7 +1,7 @@
 module.exports = {
   //-- SITE SETTINGS -----
   siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteUrl:"https://github.com/MihaiVatavu/gatsby-portfolio",
+  siteUrl: "https://github.com/MihaiVatavu/gatsby-portfolio",
   siteShortTitle: "Mihai Vatavu", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
@@ -97,9 +97,9 @@ module.exports = {
       name: "Privacy",
       url: "/privacy",
     },
-    // {
-    //   name: "Imprint",
-    //   url: "/imprint",
-    // },
+    {
+      name: "Imprint",
+      url: "/imprint",
+    },
   ],
 }
