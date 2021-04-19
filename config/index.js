@@ -94,12 +94,12 @@ module.exports = {
   },
   footerLinks: [
     {
-      name: "Privacy",
-      url: "/privacy",
+      name: "",
+      url: "",
     },
     {
-      name: "Imprint",
-      url: "/imprint",
+      name: "",
+      url: "",
     },
   ],
 }
